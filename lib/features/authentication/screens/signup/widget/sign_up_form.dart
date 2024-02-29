@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/features/authentication/screens/signup/widget/rich_span_text.dart';
-import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';

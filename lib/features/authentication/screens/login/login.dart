@@ -2,16 +2,11 @@ import 'package:ecommerce_app/common/styles/spacing_styles.dart';
 import 'package:ecommerce_app/common/widget/form_divider.dart';
 import 'package:ecommerce_app/features/authentication/screens/login/widget/login_footer.dart';
 import 'package:ecommerce_app/features/authentication/screens/login/widget/login_form_body.dart';
-import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
-import 'package:ecommerce_app/utils/device/size.dart';
 import 'package:ecommerce_app/utils/helpers/helper_function.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
