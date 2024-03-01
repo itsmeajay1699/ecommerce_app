@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
+      debugShowCheckedModeBanner: false,
       home: const OnBoardingScreen(),
     );
   }

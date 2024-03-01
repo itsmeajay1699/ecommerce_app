@@ -13,7 +13,7 @@ class ForgetPasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(TSize.defaultSpace),
+        padding: const EdgeInsets.all(TSize.defaultSpace),
         child: Column(
           children: [
             // headings

@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/features/authentication/screens/password_confiquration/forget_password.dart';
 import 'package:ecommerce_app/features/authentication/screens/signup/sign_up.dart';
+import 'package:ecommerce_app/navigation_menu.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
 import 'package:ecommerce_app/utils/device/size.dart';
@@ -62,7 +63,7 @@ class LoginFormBody extends StatelessWidget {
             SizedBox(
               width: TSizeConfig.screenWidth! * 1,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 child: const Text(TTexts.kSignin),
               ),
             ),
