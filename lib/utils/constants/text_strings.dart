@@ -30,7 +30,18 @@ class TTexts {
 
   // login scrreen
 
+  static const String kChangePasswordTitle = 'Change your password';
+
+  static const String kDone = 'Done';
+
+  static const String kChangePasswordSubtitle =
+      'Enter your new password and confirm your password to reset your password.';
+
+  static const String kForgotPasswordSubtitle =
+      'Enter your email address to reset your password. And click on the link sent to your email to reset your password.';
+
   static const String kEmail = 'E-Mail';
+  static const String kSubmit = 'Submit';
   static const String kPassword = 'Password';
   static const String kForgotPassword = 'Forgot Password?';
   static const String kNewPassword = 'New Password';
@@ -48,4 +59,13 @@ class TTexts {
   static const String kAnd = 'and';
   static const String kTermsOfService = 'Terms of use';
   static const String kPrivacyPolicy = 'Privacy Policy';
+  static const String kVerifyEmailTitle = 'Verify your email address!';
+  static const String kConfirmEmailMessage =
+      'We have sent a verification email to your email address. Please check your email and verify your account.';
+  static const String kContinue = 'Continue';
+  static const String kResendEmail = 'Resend Email';
+  static const String kYourAccountCreatedTitle =
+      'Your account has been created!';
+  static const String kYourAccountCreatedSubtitle =
+      'Welcome to Your Ultimate Shopping Destionations. Your Account is Created, Unleash the Joy of Seamless Online Shopping';
 }

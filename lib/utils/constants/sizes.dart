@@ -58,6 +58,7 @@ class TSize {
 
   static const double inputFieldRadius = 12.0;
   static const double spaceBetweenInputField = 16.0;
+  static const double spaceBtwItems = 8.0;
 
 // card sizes
 

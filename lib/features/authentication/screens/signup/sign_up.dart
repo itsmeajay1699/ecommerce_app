@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/common/widget/form_divider.dart';
 import 'package:ecommerce_app/features/authentication/screens/login/widget/login_footer.dart';
+import 'package:ecommerce_app/features/authentication/screens/signup/verify_email.dart';
 import 'package:ecommerce_app/features/authentication/screens/signup/widget/sign_up_form.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:ecommerce_app/utils/constants/text_strings.dart';
@@ -38,7 +39,7 @@ class SignupScreen extends StatelessWidget {
               SizedBox(
                 width: TSizeConfig.screenWidth! * 1,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(const VerifyEmailScreen()),
                   child: const Text(TTexts.kSignup),
                 ),
               ),
