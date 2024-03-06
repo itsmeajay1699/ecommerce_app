@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/common/widget/custom_shapes/curved_edges/curved_edges_widget.dart';
-import 'package:ecommerce_app/features/shop/home/widget/circular_container.dart';
+import 'package:ecommerce_app/features/shop/screens/home/widget/circular_container.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,6 @@ class TPrimaryHeaderContainer extends StatelessWidget {
         color: TColors.kPrimary,
         padding: const EdgeInsets.all(0),
         child: SizedBox(
-          height: 370,
           child: Stack(
             children: [
               Positioned(

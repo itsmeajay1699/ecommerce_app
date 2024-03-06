@@ -1,8 +1,11 @@
 import 'package:ecommerce_app/common/widget/custom_shapes/containers/search_container.dart';
 import 'package:ecommerce_app/common/widget/custom_shapes/primary_header_container.dart';
 import 'package:ecommerce_app/common/widget/image_text_widget/vertial_image_text.dart';
+import 'package:ecommerce_app/common/widget/layout/grid_layout.dart';
+import 'package:ecommerce_app/common/widget/product_cards/product_card_vertical.dart';
 import 'package:ecommerce_app/common/widget/texts/section_heading.dart';
-import 'package:ecommerce_app/features/shop/home/widget/home_app_bar.dart';
+import 'package:ecommerce_app/features/shop/screens/home/widget/home_app_bar.dart';
+import 'package:ecommerce_app/features/shop/screens/home/widget/promo_slider.dart';
 import 'package:ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +33,9 @@ class HomeScreen extends StatelessWidget {
                   // categories
 
                   Padding(
-                    padding: const EdgeInsets.only(left: TSize.defaultSpace),
+                    padding: const EdgeInsets.only(
+                        left: TSize.defaultSpace,
+                        bottom: TSize.defaultSpace * 1.3),
                     child: Column(
                       children: [
                         TSectionHeading(
@@ -57,6 +62,28 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   )
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(TSize.defaultSpace),
+              child: Column(
+                children: [
+                  const TPromoSlider(),
+                  const SizedBox(height: TSize.spaceBetween),
+                  TSectionHeading(
+                    text: "Products",
+                    onPressed: () {},
+                    // showActionButton: false,
+                  ),
+                  const SizedBox(height: TSize.spaceBetween),
+                  TGridLayout(
+                    itemCount: 10,
+                    mainAxisExtent: 288,
+                    itemBuilder: (context, index) {
+                      return const TProductVertical();
+                    },
+                  ),
                 ],
               ),
             ),

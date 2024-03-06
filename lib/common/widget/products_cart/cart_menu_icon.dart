@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/utils/constants/colors.dart';
+import 'package:ecommerce_app/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -14,13 +15,14 @@ class TCartCounter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelper.isDark(context);
     return Stack(
       children: [
         IconButton(
           onPressed: () {},
-          icon: const Icon(
+          icon: Icon(
             Iconsax.shopping_bag,
-            color: Colors.white,
+            color: dark ? TColors.kLight : TColors.kDark,
           ),
         ),
         Positioned(
@@ -30,14 +32,14 @@ class TCartCounter extends StatelessWidget {
             width: 18,
             alignment: Alignment.center,
             height: 18,
-            decoration: const BoxDecoration(
-              color: TColors.kBlack,
+            decoration: BoxDecoration(
+              color: dark ? TColors.kLight : TColors.kDark,
               shape: BoxShape.circle,
             ),
             child: Text(
               '2',
               style: Theme.of(context).textTheme.labelLarge!.apply(
-                    color: TColors.kWhite,
+                    color: dark ? TColors.kDark : TColors.kLight,
                     fontSizeFactor: 0.8,
                   ),
             ),
